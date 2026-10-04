@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingeniería de Sistemas - Universidad de la Amazonia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+            <!-- Menú-->
+      <nav class="navbar navbar-expand-xl" id="miNav">
+        <div class="container-fluid px-3 px-lg-5">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+            <img class="logo" src="./img/logoUni.png" alt="Logo Universidad de la Amazonia" />
+            Ingeniería de Sistemas
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral" aria-controls="menuLateral" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas-xl offcanvas-end" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="menuLateralLabel">Menú</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#menuLateral" aria-label="Cerrar"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.uniamazonia.edu.co/" target="_blank" rel="noopener"><i class="bi bi-house-door-fill" aria-hidden="true"></i> Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-info-circle-fill" aria-hidden="true"></i> Acerca de</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#proposito">Propósito de formación</a></li>
+                    <li><a class="dropdown-item" href="#mision-vision">Misión y Visión</a></li>
+                    <li><a class="dropdown-item" href="#perfil">Perfil del egresado</a></li>
+                    <li><a class="dropdown-item" href="#docentesYadmin">Docentes y directivos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-plus-fill" aria-hidden="true"></i> Admisión</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#requisitos">Requisitos</a></li>
+                    <li><a class="dropdown-item" href="#inversion">Inversión</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i> Información académica</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#plan">Plan de estudios</a></li>
+                    <li><a class="dropdown-item" href="#documentos">Documentos de interés</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto"><i class="bi bi-telephone-fill" aria-hidden="true"></i> Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Carrusel principal -->
+      <section id="carrusel" class="carousel slide" data-bs-ride="carousel" aria-label="Presentación del programa">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+          <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+          <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Carrusel1img.jpg" alt="Campus de la Universidad de la Amazonia" />
+            <div class="carousel-caption">
+              <h1>Ingeniería de Sistemas en la Amazonia</h1>
+              <p>Formamos ingenieros que crean soluciones para la región y el país.</p>
+              <div class="botones">
+                <a href="#proposito" class="btn-lima">Explora el programa</a>
+                <a href="#requisitos" class="btn-rosa">Cómo inscribirme</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Carrusel2img.jpg" alt="Estudiantes desarrollando software" />
+            <div class="carousel-caption">
+              <h2>Aprende haciendo</h2>
+              <p>Un plan de 10 semestres que combina teoría y práctica.</p>
+              <div class="botones"><a href="#plan" class="btn-lima">Ver plan de estudios</a></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Carrusel3img.jpg" alt="Investigación en el programa" />
+            <div class="carousel-caption">
+              <h2>Investiga e innova</h2>
+              <p>Semilleros y líneas de investigación al servicio de la Amazonia.</p>
+              <div class="botones"><a href="#documentos" class="btn-rosa">Documentos de interés</a></div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </section>
+
+      <!-- Datos generales -->
+      <section class="datos" id="datos" aria-label="Datos del programa">
+        <div class="contenedor grid-4">
+          <div class="dato"><i class="bi bi-calendar3"></i><strong>10 semestres</strong><span>Duración</span></div>
+          <div class="dato"><i class="bi bi-building"></i><strong>Presencial</strong><span>Modalidad</span></div>
+          <div class="dato"><i class="bi bi-mortarboard"></i><strong>Ingeniero de Sistemas</strong><span>Título</span></div>
+          <div class="dato"><i class="bi bi-hash"></i><strong>52384</strong><span>Código SNIES</span></div>
+        </div>
+      </section>
+
+      <!-- sec1 -->
+      <section class="sec1" aria-label="Descubre el programa">
+        <article class="art art-1">
+          <h3><a class="stretched-link" href="#proposito">Presentación del programa</a></h3>
+          <p>Conoce el propósito, la misión y el perfil de quienes egresan.</p>
+        </article>
+        <article class="art art-2">
+          <h3><a class="stretched-link" href="#plan">Aprendizaje y plan de estudios</a></h3>
+          <p>Un recorrido de 10 semestres que combina teoría y práctica.</p>
+        </article>
+        <article class="art art-3">
+          <h3><a class="stretched-link" href="#docentesYadmin">Conócenos</a></h3>
+          <p>Conoce al equipo de docentes y directivos que te acompañará en tu formación.</p>
+        </article>
+      </section>
+
+      <!-- Propósito -->
+      <section class="seccion seccion-alt" id="proposito">
+        <div class="contenedor">
+          <h2><i class="bi bi-bullseye ico" aria-hidden="true"></i> Propósito de formación</h2>
+          <p>
+            El Programa Ingeniería de Sistemas de la Universidad de la Amazonia tiene como principal propósito desarrollar procesos de formación integral de profesionales de la Ingeniería de Sistemas, mediante un currículo que aborda las ciencias básicas, la ingeniería, el campo tecnológico, investigativo, socio-humanista y de formación complementaria.
+          </p>
+          <div class="collapse" id="propositoMas">
+            <p>
+              Este currículo le permitirá interactuar con su entorno e incidir positivamente en él, mediante la creación, innovación y aplicación de soluciones computacionales soportadas en las Tecnologías de la Información y la Comunicación, que contribuyan al fortalecimiento y progreso económico, social, tecnológico y sustentable de la región Amazónica y el país.
+            </p>
+          </div>
+          <button class="btn-lima" type="button" data-bs-toggle="collapse" data-bs-target="#propositoMas" aria-expanded="false" aria-controls="propositoMas">Leer más</button>
+        </div>
+      </section>
+
+      <!-- Misión y visión -->
+      <section class="seccion" id="mision-vision">
+        <div class="contenedor">
+          <h2><i class="bi bi-compass ico" aria-hidden="true"></i> Misión y Visión</h2>
+          <div class="grid-2">
+            <article class="tarjeta">
+              <h3><i class="bi bi-flag-fill ico" aria-hidden="true"></i> Misión</h3>
+              <p>
+                El programa asume como encargo social la formación de profesionales íntegros, con capacidad para crear, innovar, formular y solucionar problemáticas organizacionales y productivas, apoyados en el desarrollo de sistemas de información soportados en las diferentes tecnologías informáticas, con el propósito de contribuir al desarrollo social, económico y tecnológico de la región amazónica y del país.
+              </p>
+            </article>
+            <article class="tarjeta">
+              <h3><i class="bi bi-eye-fill ico" aria-hidden="true"></i> Visión</h3>
+              <p>
+                Ingeniería de Sistemas será un programa académico en permanente acreditación académica y social, líder en la formación integral de profesionales, competentes en el campo académico, investigativo y humanístico; comprometidos con el desarrollo tecnológico de la región amazónica y del país apoyados en tecnologías de información.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Perfil del egresado-->
+      <section class="seccion seccion-alt" id="perfil">
+        <div class="contenedor perfil-grid">
+          <div class="perfil-texto">
+            <h2><i class="bi bi-person-badge-fill ico" aria-hidden="true"></i> Perfil del egresado</h2>
+            <p>
+              El Ingeniero de Sistemas de la Universidad de la Amazonia es un profesional que comprende las dinámicas del entorno, reconociendo las implicaciones y responsabilidades legales, profesionales, éticas, sociales, económicas y culturales del ejercicio de su profesión.
+            </p>
+            <p>
+              Reconoce que la evolución constante de su disciplina y las condiciones cambiantes del entorno hacen necesario implementar estrategias autónomas de aprendizaje continuo, orientadas a su perfeccionamiento profesional.
+            </p>
+          </div>
+
+          <div id="carruselEgresado" class="carousel slide carousel-egresado" data-bs-ride="carousel" aria-label="Fotos de egresados">
+            <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carruselEgresado" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+          <button type="button" data-bs-target="#carruselEgresado" data-bs-slide-to="1" aria-label="Foto 2"></button>
+          <button type="button" data-bs-target="#carruselEgresado" data-bs-slide-to="2" aria-label="Foto 3"></button>
+          <button type="button" data-bs-target="#carruselEgresado" data-bs-slide-to="3" aria-label="Foto 4"></button>
+          <button type="button" data-bs-target="#carruselEgresado" data-bs-slide-to="4" aria-label="Foto 5"></button>
+          <button type="button" data-bs-target="#carruselEgresado" data-bs-slide-to="5" aria-label="Foto 6"></button>
+
+            </div>
+            <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/Egresados1.jpg" alt="Egresados del programa de Ingeniería de Sistemas, foto 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Egresados2.jpg" alt="Egresados del programa de Ingeniería de Sistemas, foto 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Egresados3.jpg" alt="Egresados del programa de Ingeniería de Sistemas, foto 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Egresados4.jpg" alt="Egresados del programa de Ingeniería de Sistemas, foto 4" /> 
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Egresados5.jpg" alt="Egresados del programa de Ingeniería de Sistemas, foto 5" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Egresados6.jpg" alt="Egresados del programa de Ingeniería de Sistemas, foto 6" />
+        </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselEgresado" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselEgresado" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plan de estudios -->
+      <section class="seccion" id="plan">
+        <div class="contenedor">
+          <h2><i class="bi bi-journal-text ico" aria-hidden="true"></i> Plan de estudios</h2>
+          <p>
+            Acuerdo 44 del 02 de diciembre de 2020: por el cual se aprueba el nuevo plan de estudios y el plan de transición del programa académico de Ingeniería de Sistemas.
+          </p>
+          <div id="planCarrusel" class="carousel slide carousel-dark" data-bs-interval="false" aria-label="Plan de estudios por semestre">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Semestre I"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="1" aria-label="Semestre II"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="2" aria-label="Semestre III"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="3" aria-label="Semestre IV"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="4" aria-label="Semestre V"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="5" aria-label="Semestre VI"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="6" aria-label="Semestre VII"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="7" aria-label="Semestre VIII"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="8" aria-label="Semestre IX"></button>
+            <button type="button" data-bs-target="#planCarrusel" data-bs-slide-to="9" aria-label="Semestre X"></button>
+            </div>
+            <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="plan-slide">
+              <span class="plan-num">1</span>
+              <a href="https://drive.google.com/drive/folders/1zSvYsgnrHqpw7Jo6bpX_ffVoTy2_Excl" target="_blank" rel="noopener"><h3>Semestre I</h3></a>
+              <ul class="plan-areas">
+                <li>Comunicación</li>
+                <li>Deporte y Cultura</li>
+                <li>Matemáticas I</li>
+                <li>Física I</li>
+                <li>Biología General</li>
+                <li>Introducción a la Ingeniería</li>
+                <li>Lógica y Algoritmos I</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">2</span>
+              <a href="https://drive.google.com/drive/folders/1UM5jDQEOwQdQ0qs-wdmdhg2nfyE7DYiH" target="_blank" rel="noopener"><h3>Semestre II</h3></a>
+              <ul class="plan-areas">
+                <li>Constitución y Democracia</li>
+                <li>Matemáticas II</li>
+                <li>Física II</li>
+                <li>Química</li>
+                <li>Teoría General de Sistemas</li>
+                <li>Lógica y Algoritmos II</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">3</span>
+              <a href="https://drive.google.com/drive/folders/1lHre6BmrVbT63LrzlM4frTtihwC43ruz" target="_blank" rel="noopener"><h3>Semestre III</h3></a>
+              <ul class="plan-areas">
+                <li>Idioma Extranjero I</li>
+                <li>Algebra Lineal</li>
+                <li>Matemáticas Discretas</li>
+                <li>Análisis de Sistemas</li>
+                <li>Estructura de Datos I</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">4</span>
+              <a href="https://drive.google.com/drive/folders/19009UeRpjcugXjykbI-Y_669yeCA-a3x" target="_blank" rel="noopener"><h3>Semestre IV</h3></a>
+              <ul class="plan-areas">
+                <li>Ecuaciones Diferenciales</li>
+                <li>Estadística para Ingeniería</li>
+                <li>Ingeniería de Software</li>
+                <li>Sistemas Operativos</li>
+                <li>Estructura de Datos II</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">5</span>
+              <a href="https://drive.google.com/drive/folders/101t1yjvSeQRnVZgKarHls4B8AE8L7yD-" target="_blank" rel="noopener"><h3>Semestre V</h3></a>
+              <ul class="plan-areas">
+                <li>Idioma Extranjero II</li>
+                <li>Ingeniería de Software II</li>
+                <li>Métodos Numéricos</li>
+                <li>Programación Web</li>
+                <li>Diseño de Base de Datos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">6</span>
+              <a href="https://drive.google.com/drive/folders/1T_wvlzhSlEXoiKfhc6stH-eSX657uSle" target="_blank" rel="noopener"><h3>Semestre VI</h3></a>
+              <ul class="plan-areas">
+                <li>Filosofía e Historia</li>
+                <li>Modelos Determinísticos</li>
+                <li>Ingeniería de Software III</li>
+                <li>Programación Móvil</li>
+                <li>Redes Informáticas I</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">7</span>
+              <a href="https://drive.google.com/drive/folders/1Uu2oQmCVWScQohQjPNgh20qTvXXMVfK_" target="_blank" rel="noopener"><h3>Semestre VII</h3></a>
+              <ul class="plan-areas">
+                <li>Metodología de la Investigación I</li>
+                <li>Proyectos de Software</li>
+                <li>Inteligencia Computacional I</li>
+                <li>Redes Informáticas II</li>
+                <li>Administración de Bases de Datos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">8</span>
+              <a href="https://drive.google.com/drive/folders/1whtFfLBR2QO52TF5GbXzIe8QBmwN-4MS" target="_blank" rel="noopener"><h3>Semestre VIII</h3></a>
+              <ul class="plan-areas">
+                <li>Desarrollo Humano</li>
+                <li>Ética</li>
+                <li>Metodología de la Investigación II</li>
+                <li>Planeación Estratégica de S.I</li>
+                <li>Inteligencia Computacional II</li>
+                <li>Taller de Emprendimiento</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">9</span>
+              <a href="https://drive.google.com/drive/folders/1O-ZO85_mOs-NgTbByoatH9i1DbI9UXl0" target="_blank" rel="noopener"><h3>Semestre IX</h3></a>
+              <ul class="plan-areas">
+                <li>URMA</li>
+                <li>Gestión Tecnológica</li>
+                <li>Taller de Escritura</li>
+                <li>Electiva I- Inteligencia de Negocios</li>
+                <li>Electiva II- Software Educativo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="plan-slide">
+              <span class="plan-num">10</span>
+              <a href="https://drive.google.com/drive/folders/1LJIDrNiuEdGQbxIhc95yQQhN4yRKc95k" target="_blank" rel="noopener"><h3>Semestre X</h3></a>
+              <ul class="plan-areas">
+                <li>Electiva III- Inteligencia de Negocios</li>
+                <li>Electiva IV- SIG</li>
+              </ul>
+            </div>
+          </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#planCarrusel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Semestre anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#planCarrusel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Semestre siguiente</span>
+            </button>
+          </div>
+          <a class="btn-rosa plan-btn" href="https://drive.google.com/drive/folders/1OjF8Tb43WolUrTwbHwLWE9UDTKP45xVQ" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right" aria-hidden="true"></i> Ver contenidos programáticos</a>
+        </div>
+      </section>
+
+      <!-- Requisitos e inversión -->
+      <section class="seccion seccion-alt" id="requisitos">
+        <div class="contenedor grid-2">
+          <article class="tarjeta">
+            <h2><i class="bi bi-card-checklist ico" aria-hidden="true"></i> Requisitos</h2>
+            <ul>
+              <li>Resultados de las pruebas Saber 11.</li>
+              <li>Documento de identidad.</li>
+              <li>Formulario de inscripción diligenciado.</li>
+              <li>Demás documentos exigidos por la universidad en el proceso de admisión.</li>
+            </ul>
+          </article>
+          <article class="tarjeta" id="inversion">
+            <h2><i class="bi bi-cash-coin ico" aria-hidden="true"></i> Inversión</h2>
+            <p>Costos de matrícula y opciones de financiación del programa:</p>
+            <ul>
+              <li>Valor inscripción: 8.0 % del S.M.M.L.V. <a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20002%20-%20Por%20el%20cual%20se%20fijan%20los%20derechos%20pecuniarios.pdf" target="_blank" rel="noopener">Acuerdo 02 del 26 de enero de 2012</a></li>
+              <li>Valor derecho de matrícula: <a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Superior/Acuerdos/2012/Acuerdo%20001%20-%20Por%20el%20cual%20se%20establece%20la%20tabla%20de%20matricula%20para%20estudiantes%20de%20pregrado%20presencial.pdf" target="_blank" rel="noopener">Acuerdo 01 del 26 de enero de 2012</a></li>
+            </ul>
+          </article>
+        </div>
+        <div class="botones">
+          <a href="https://chaira.uniamazonia.edu.co/academicov3/vistas/publico/Inscripciones/Nuevos/InicialNuevos.aspx?nied=2" class="btn-rosa2" target="_blank" rel="noopener"><i class="bi bi-pencil-square" aria-hidden="true"></i> Inscríbete</a>
+        </div>
+      </section>
+
+      <!-- Documentos -->
+      <section class="seccion" id="documentos">
+        <div class="contenedor">
+          <h2><i class="bi bi-folder2-open ico" aria-hidden="true"></i> Documentos de interés</h2>
+          <ul class="lista-enlaces">
+            <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Consejo%20Academico/Acuerdos/2002/Acuerdo%2019%20-%20Por%20el%20cual%20se%20adopta%20la%20linea%20de%20investigacion%20Sistemas%20de%20Formacion%20Geografica%20para%20la%20facultad%20de%20ingenieria.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf ico" aria-hidden="true"></i> Acuerdo No. 019 de 2002: Línea de investigación Sistemas de Información Geográfica</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1OjF8Tb43WolUrTwbHwLWE9UDTKP45xVQ" target="_blank" rel="noopener"><i class="bi bi-folder2 ico" aria-hidden="true"></i> Contenidos programáticos pensum 2020</a></li>
+            <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Programas%20Academicos/Ingenieria%20de%20Sistemas/Formatos%20de%20Opcion%20de%20grado/Opciones%20de%20grado.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf ico" aria-hidden="true"></i> Opciones de grado</a></li>
+            <li><a href="https://drive.google.com/drive/folders/14EBlcWxRo1mfWvUKeTcIXoWUWORG0KUJ" target="_blank" rel="noopener"><i class="bi bi-folder2 ico" aria-hidden="true"></i> Formatos de opción de grado</a></li>
+            <li><a href="https://www.uniamazonia.edu.co/documentos/docs/Sistema%20Integrado%20de%20Gestion%20de%20Calidad/6.%20Procesos/2.%20Misional/Docencia/Procedimientos/7.%20Aprobacion%20de%20opcion%20de%20grado/FO-M-DC-07-03.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf ico" aria-hidden="true"></i> Formato de notificación de opción de grado</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1IuMu73ZW26iHtAeWZHUp9UXN2dHLfxus" target="_blank" rel="noopener"><i class="bi bi-folder2 ico" aria-hidden="true"></i> Protocolo de sustentación y socialización</a></li>
+          </ul>
+        </div>
+      </section>
+
+          <!-- Directivos y Docentes -->
+      <section class="seccion seccion-alt" id="docentesYadmin">
+        <div class="contenedor">
+          <h2><i class="bi bi-people-fill ico" aria-hidden="true"></i> Conócenos: Nuestro Personal Docente y Directivo</h2>
+          <p>Conoce al equipo que lidera el programa y acompaña tu formación.</p>
+
+          <h3 class="subtitulo-directivos"><i class="bi bi-person-badge ico" aria-hidden="true"></i> Directivos</h3>
+          <button class="btn-rosa" type="button" data-bs-toggle="collapse" data-bs-target="#listaDirectivos" aria-expanded="false" aria-controls="listaDirectivos">Ver directivos</button>
+          <div class="collapse" id="listaDirectivos">
+            <div class="grid-directivos">
+              <article class="directivos">
+                <img src="./img/paulaChica.jpg" alt="Foto de Paula Andrea Chica Murcia" loading="lazy" />
+                <div class="docente-info">
+                  <h3>Paula Andrea Chica Murcia</h3>
+                  <p class="docente-cargo"><i class="bi bi-person-badge-fill ico" aria-hidden="true"></i> Jefe del programa de Ingeniería de Sistemas</p>
+                  <a href="mailto:p.chica@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i> p.chica@udla.edu.co</a>
+                </div>
+              </article>
+              <article class="directivos">
+                <img src="./img/yudyOtaya.jpg" alt="Foto de Yudy Alexandra Otaya Calderón" loading="lazy" />
+                <div class="docente-info">
+                  <h3>Yudy Alexandra Otaya Calderón</h3>
+                  <p class="docente-cargo"><i class="bi bi-building ico" aria-hidden="true"></i> Decana de la Facultad de Ingeniería</p>
+                  <a href="mailto:y.otaya@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i> y.otaya@udla.edu.co</a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <h3 class="subtitulo-docentes"><i class="bi bi-people ico" aria-hidden="true"></i> Docentes</h3>
+          <button class="btn-rosa" type="button" data-bs-toggle="collapse" data-bs-target="#listaDocentes" aria-expanded="false" aria-controls="listaDocentes">Ver docentes</button>
+          <div class="collapse" id="listaDocentes">
+            <div class="grid-docentes">
+          <article class="docente">
+            <img src="./img/Ruth.jpg" alt="Foto de Ruth Dary Escobar Sarria" loading="lazy" />
+            <div class="docente-info">
+              <h3>Ruth Dary Escobar Sarria</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:r.escobar@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>r.escobar@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Elio.jpg" alt="Foto de Elio Fabio Sánchez Trujillo" loading="lazy" />
+            <div class="docente-info">
+              <h3>Elio Fabio Sánchez Trujillo</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:elio.sanchez@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>elio.sanchez@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Wilmer.jpg" alt="Foto de Wilmer Arley Patiño Perdomo" loading="lazy" />
+            <div class="docente-info">
+              <h3>Wilmer Arley Patiño Perdomo</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:w.patino@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>w.patino@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Fredy.jpg" alt="Foto de Fredy Antonio Verástegui González" loading="lazy" />
+            <div class="docente-info">
+              <h3>Fredy Antonio Verástegui González</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:f.verastegui@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>f.verastegui@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Millan.jpg" alt="Foto de Edwin Eduardo Millán Rojas" loading="lazy" />
+            <div class="docente-info">
+              <h3>Edwin Eduardo Millán Rojas</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:e.millan@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>e.millan@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Heriberto.jpg" alt="Foto de Heriberto Fernando Vargas Losada" loading="lazy" />
+            <div class="docente-info">
+              <h3>Heriberto Fernando Vargas Losada</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:heri.vargas@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>heri.vargas@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Denis.jpg" alt="Foto de Denis Lorena Álvarez Guayara" loading="lazy" />
+            <div class="docente-info">
+              <h3>Denis Lorena Álvarez Guayara</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:d.alvarez@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>d.alvarez@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Oscar.jpg" alt="Foto de Oscar Fabian Patiño Perdomo" loading="lazy" />
+            <div class="docente-info">
+              <h3>Oscar Fabian Patiño Perdomo</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:o.patino@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>o.patino@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Diana.jpg" alt="Foto de Diana María Espinosa Sarmiento" loading="lazy" />
+            <div class="docente-info">
+              <h3>Diana María Espinosa Sarmiento</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:di.espinosa@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>di.espinosa@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Magola.jpg" alt="Foto de Magola Hermida Herrera" loading="lazy" />
+            <div class="docente-info">
+              <h3>Magola Hermida Herrera</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:m.hermida@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>m.hermida@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Arley.jpg" alt="Foto de John Arley Garcia Quintero" loading="lazy" />
+            <div class="docente-info">
+              <h3>John Arley Garcia Quintero</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:j.garcia@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>j.garcia@udla.edu.co</a>
+            </div>
+          </article>
+
+          <article class="docente">
+            <img src="./img/Lina.jpg" alt="Foto de Lina Saza Bustos" loading="lazy" />
+            <div class="docente-info">
+              <h3>Lina Saza Bustos</h3>
+              <p class="docente-cargo"><i class="bi bi-mortarboard-fill ico" aria-hidden="true"></i>Docente</p>
+              <a href="mailto:l.saza@udla.edu.co"><i class="bi bi-envelope-fill ico" aria-hidden="true"></i>l.saza@udla.edu.co</a>
+            </div>
+          </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+            <!-- Contacto-->
+     
+      <section class="seccion" id="contacto">
+        <div class="contenedor">
+          <div class="contacto-caja">
+            <h2><i class="bi bi-headset ico" aria-hidden="true"></i> Contacto</h2>
+            <p><i class="bi bi-building-fill ico" aria-hidden="true"></i><strong>Universidad de la Amazonia</strong></p>
+            <p><i class="bi bi-geo-alt-fill ico" aria-hidden="true"></i> Florencia – Caquetá, Campus Florencia</p>
+            <p><i class="bi bi-envelope-fill ico" aria-hidden="true"></i> Correo: <a href="mailto:pisistemas@uniamazonia.edu.co">pisistemas@uniamazonia.edu.co</a></p>
+            <p><i class="bi bi-telephone-fill ico" aria-hidden="true"></i> Teléfono: <a href="tel:+573204541936">320 454 1936</a></p>
+            <a class="btn-rosa" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Universidad+de+la+Amazonia+Florencia+Caqueta"><i class="bi bi-map" aria-hidden="true"></i> Ver en el mapa</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+        
+    <footer>
+      <div class="contenedor footer-grid">
+        <div>
+          <h4><i class="bi bi-link-45deg ico" aria-hidden="true"></i> Enlaces de interés</h4>
+          <ul>
+            <li><a href="https://www.uniamazonia.edu.co" target="_blank" rel="noopener">Sitio de la universidad</a></li>
+            <li><a href="#documentos">Documentos de interés</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><i class="bi bi-telephone-fill ico" aria-hidden="true"></i> Contáctanos</h4>
+          <p><i class="bi bi-geo-alt-fill ico" aria-hidden="true"></i> Sede Porvenir<br />Calle 17 Diagonal 17 con Carrera 3F, Barrio Porvenir, Florencia, Caquetá, Colombia</p>
+          <p><i class="bi bi-clock-fill ico" aria-hidden="true"></i> Atención al público: lunes a viernes de 7:30 a.m. a 11:30 m. y de 1:30 p.m. a 5:30 p.m.</p>
+          <p><i class="bi bi-envelope-fill ico" aria-hidden="true"></i> Correo: <a href="mailto:atencionalciudadano@uniamazonia.edu.co">atencionalciudadano@uniamazonia.edu.co</a></p>
+        </div>
+        <div>
+          <h4><i class="bi bi-share-fill ico" aria-hidden="true"></i> Síguenos</h4>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/people/Programa-Ingenier%C3%ADa-de-Sistemas-Uniamazonia/100040650018772/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/uniamazonia/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/uniamazonia" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.youtube.com/c/uamazonia" target="_blank" rel="noopener" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.tiktok.com/@ingenieriadesistemasudla" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+          </div>
+          <p>@uniamazonia</p>
+        </div>
+        <div class="footer-legal">
+          <p>Vigilada Ministerio de Educación</p>
+          <p>© 2026 Programa de Ingeniería de Sistemas · Uniamazonia · Código SNIES 52384</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
